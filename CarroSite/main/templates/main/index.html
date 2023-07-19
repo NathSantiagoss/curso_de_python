@@ -1,0 +1,40 @@
+
+
+
+<form method="POST">
+    {% csrf_token %}
+
+    <div class="form-group">
+      <label for="modelo">Modelo: </label>
+      <input type = "text" class="form-control" id="modelo" name = 'modelo' 
+      aria-describedby="emailHelp">
+      
+    </div>
+
+    <div class="form-group">
+      <label for="marca">Marca: </label>
+      <input class="form-control" id="marca" name = 'marca'>
+    </div>
+    
+    <div class="form-group">
+        <label for="cor">Cor: </label>
+        <select class="form-control" id="cor" name = 'cor'>
+        <option>Preto</option>
+        <option>Branco</option>
+        <option>Prata</option>
+        <option>Vermelho</option>
+        </select>
+      </div>
+    
+      <div class="form-group">
+        <label for="data_compra">Data da compra: </label>
+        <input class="form-control" id="data_compra" name = 'data_compra'>
+      </div>
+    
+      <div class="form-group">
+        <label for="observacoes">Observações: </label>
+        <input class="form-control" id="observacoes" name = 'observacoes'>
+      </div>
+    
+    <button type="submit" class="btn btn-primary">Enviar </button>
+  </form>
